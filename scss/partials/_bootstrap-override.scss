@@ -25,6 +25,16 @@ $badge-border-radius: 50rem;
 $input-border-radius: 50rem;
 $btn-border-radius: 50rem;
 
+$epicode-1: #5726c3;
+$epicode-2: #8625a5;
+$epicode-3: #cb2376;
+
+$more-theme-colors: (
+  "epicode-1": $epicode-1,
+  "epicode-2": $epicode-2,
+  "epicode-3": $epicode-3,
+);
+
 @import "../../bootstrap/variables";
 @import "../../bootstrap/variables-dark";
 
@@ -47,6 +57,11 @@ $border-widths: map-merge(
 
 $card-bg: $dark;
 $card-color: $info;
+
+$theme-colors: map-merge(
+  $map1: $theme-colors,
+  $map2: $more-theme-colors,
+);
 
 @import "../../bootstrap/maps";
 @import "../../bootstrap/mixins";
