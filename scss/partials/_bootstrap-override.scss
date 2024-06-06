@@ -35,6 +35,16 @@ $more-theme-colors: (
   "epicode-3": $epicode-3,
 );
 
+$more-breakpoints: (
+  3xl: 1600px,
+  4xl: 1800px,
+);
+
+$more-max-widths: (
+  3xl: 1520px,
+  4xl: 1720px,
+);
+
 @import "../../bootstrap/variables";
 @import "../../bootstrap/variables-dark";
 
@@ -61,6 +71,16 @@ $card-color: $info;
 $theme-colors: map-merge(
   $map1: $theme-colors,
   $map2: $more-theme-colors,
+);
+
+$grid-breakpoints: map-merge(
+  $map1: $grid-breakpoints,
+  $map2: $more-breakpoints,
+);
+
+$container-max-widths: map-merge(
+  $map1: $container-max-widths,
+  $map2: $more-max-widths,
 );
 
 @import "../../bootstrap/maps";
