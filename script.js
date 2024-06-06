@@ -14,9 +14,9 @@ const badgeGen = () => {
     const currentCard = cards[i];
     currentCard.classList.add("position-relative");
     const badge = document.createElement("span");
-    badge.className = "badge rounded-pill text-bg-danger position-absolute";
-    badge.style.top = "5px";
-    badge.style.right = "5px";
+    badge.className = "badge rounded-pill text-bg-danger position-absolute text-light";
+    badge.style.top = "10px";
+    badge.style.right = "10px";
     badge.innerText = "HOT";
     currentCard.appendChild(badge);
   }
