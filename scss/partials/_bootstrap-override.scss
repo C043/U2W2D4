@@ -10,6 +10,9 @@ $more-border-widths: (
   10: 10px,
 );
 
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 2.5rem;
+
 @import "../../bootstrap/variables";
 @import "../../bootstrap/variables-dark";
 
@@ -24,6 +27,7 @@ $font-sizes: map-merge(
   $map1: $font-sizes,
   $map2: $more-font-sizes,
 );
+
 $border-widths: map-merge(
   $map1: $border-widths,
   $map2: $more-border-widths,
