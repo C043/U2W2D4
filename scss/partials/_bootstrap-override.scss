@@ -2,6 +2,14 @@
 // Configuration
 @import "../../bootstrap/functions";
 
+$more-border-widths: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+);
+
 @import "../../bootstrap/variables";
 @import "../../bootstrap/variables-dark";
 
@@ -15,6 +23,10 @@ $more-font-sizes: (
 $font-sizes: map-merge(
   $map1: $font-sizes,
   $map2: $more-font-sizes,
+);
+$border-widths: map-merge(
+  $map1: $border-widths,
+  $map2: $more-border-widths,
 );
 @import "../../bootstrap/maps";
 @import "../../bootstrap/mixins";
