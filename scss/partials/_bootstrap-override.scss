@@ -5,6 +5,17 @@
 @import "../../bootstrap/variables";
 @import "../../bootstrap/variables-dark";
 
+$more-font-sizes: (
+  7: $font-size-base * 0.9,
+  8: $font-size-base * 0.8,
+  9: $font-size-base * 0.7,
+  10: $font-size-base * 0.5,
+);
+
+$font-sizes: map-merge(
+  $map1: $font-sizes,
+  $map2: $more-font-sizes,
+);
 @import "../../bootstrap/maps";
 @import "../../bootstrap/mixins";
 @import "../../bootstrap/utilities";
