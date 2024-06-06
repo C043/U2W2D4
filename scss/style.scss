@@ -1,1 +1,10 @@
 @import "./partials/bootstrap-override";
+
+#collapseSaldi {
+  .card {
+    .card-img-top {
+      border-top-left-radius: subtract($card-border-radius, 6px);
+      border-top-right-radius: subtract($card-border-radius, 6px);
+    }
+  }
+}

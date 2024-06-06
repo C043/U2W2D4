@@ -14159,4 +14159,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+#collapseSaldi .card .card-img-top {
+  border-top-left-radius: calc(2rem - 6px);
+  border-top-right-radius: calc(2rem - 6px);
 }/*# sourceMappingURL=style.css.map */
